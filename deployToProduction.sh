@@ -1,5 +1,3 @@
-chmod 600 key.pem
-
 COMMAND="cd ~/servers/hopper_hack_backend/ && \
 	git checkout master && \
 	git fetch --all --prune && \
