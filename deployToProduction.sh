@@ -8,6 +8,6 @@ COMMAND="cd ~/servers/hopper_hack_backend/ && \
 	yarn && \
 	pm2 startOrRestart ecosystem.config.js --env production"
 
-ssh -i key.pem $USER@$SERVER $COMMAND
+ssh -o StrictHostKeyChecking=no $USER@$SERVER $COMMAND
 studyabacus
 ec2-100-27-29-8.compute-1.amazonaws.com
